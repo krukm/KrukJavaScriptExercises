@@ -11,3 +11,15 @@ function do_math(num) {
   }
   return total;
 }
+
+function add_strings() {
+  var strings = "";
+  var answer = prompt("Do you want to play?");
+
+   do {
+    var string = prompt("Enter a word.");
+    strings += string + " ";
+    answer = prompt("Do you want to play, again?");
+  } while (answer != 'no' && answer == 'yes');
+  document.getElementById("concat").innerHTML = strings;
+}

@@ -44,6 +44,7 @@ function user_name() {
     reply = prompt("Would you like to print this again?", "yes");
   }
   document.getElementById("excited_name").innerHTML = "Hello. My name is " + name;
+  console.log("Hello. My name is " + name);
 }
 
 function meal_time() {
@@ -52,12 +53,15 @@ function meal_time() {
   switch(time_of_day) {
     case "morning":
       document.getElementById("time_of_day").innerHTML = "Since it is morning, you should be eating breakfast. We suggest eggs and toast.";
+      console.log("Since it is morning, you should be eating breakfast. We suggest eggs and toast.");
       break;
     case "noon":
       document.getElementById("time_of_day").innerHTML = "Since it is noon, you should be eating lunch. We suggest a salad.";
+      console.log("Since it is noon, you should be eating lunch. We suggest a salad.");
       break;
     case "evening":
       document.getElementById("time_of_day").innerHTML = "Since it is evening, you should be eating dinner. We suggest chicken and rice.";
+      console.log("Since it is evening, you should be eating dinner. We suggest chicken and rice.");
       break;
     default:
       alert("Please enter a valid time of day: morning, noon, or evening.");
